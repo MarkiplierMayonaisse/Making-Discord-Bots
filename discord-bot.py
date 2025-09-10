@@ -4,11 +4,11 @@ from discord.ext import commands
 import asyncio
 from keep_alive import keep_alive
 
-client = commands.Bot(command_prefix = 'Your Preferred Bot Prefix')
+client = commands.Bot(command_prefix = '/')
 
 @client.event
 async def on_ready():
-    await client.change_presence(activity=discord.Game('Enter Anything Random Here'))
+    await client.change_presence(activity=discord.Game(''))
     
     print('Connected to bot: {}'.format(client.user.name))
     print('Bot ID: {}'.format(client.user.id))
@@ -87,4 +87,5 @@ async def choose(ctx, a: str, b: str):
 
 keep_alive()
 
-client.run('Paste Bot Token Here')
+client.run('MTQxNTIxMTY3MjU0NDYxMjM5NA.GxfZrK.O1IITCNDRmZYBky12T2C_GD3ff5vHTHBMYdXko')
+
